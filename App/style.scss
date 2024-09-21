@@ -1,0 +1,73 @@
+// ## Colors
+// ### Primary
+
+$Light-Cyan: hsl(193, 38%, 86%);
+$NeonGreen: hsl(150, 100%, 66%);
+
+// ### Neutral
+
+
+$GrayishBlue: hsl(217, 19%, 38%);
+$Dark-GrayishBlue: hsl(217, 19%, 24%);
+$DarkBlue: hsl(218, 23%, 16%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    min-height: 100vh;
+    min-width: 100%;
+    display: grid;
+    justify-content: center;
+    background-color: $DarkBlue;
+
+    section {
+        margin-top: 10rem;
+        min-height: 200px;
+        max-height: 300px;
+        max-width: 35rem;
+        min-width: 350px;
+        padding:  0 1rem;
+        background-color: $Dark-GrayishBlue;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        column-gap: 1rem;
+        padding: 0 1rem;
+        color: $Light-Cyan;
+        box-shadow: 0 25px 50px -12px $DarkBlue;
+    }
+
+    strong {
+        color: $NeonGreen;
+        padding-bottom: clamp(1rem, 2vw, 3rem);
+    }
+
+    .img {
+        margin-top: 1rem;
+        padding: 15px 0 3rem 0;
+    }
+
+    .round-div {
+        display: grid;
+        place-items: center;
+        height: 50px;
+        width: 50px;
+        background-color: $NeonGreen;
+        border-radius: 50%;
+        
+    }
+
+    q {
+        font-size:clamp(1.2rem, 2vw, 2.5rem);
+    }
+    
+}
